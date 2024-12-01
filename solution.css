@@ -1,21 +1,27 @@
-# Portfolio Website
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
 
-## Style
-
-### Body 
-
-```css
 body{
     padding: 0 100px 0 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-color: 	#C7EEFF ;
+
+    @media (max-width:430px) {
+        padding: 0;
+        width: 100%;
+    }
 }
 
-```
-### Navbar
+/*-------------- Navbar ---------------*/
 
-```css
 .navbar{
     width: 100%;
     height: 100px;
@@ -25,11 +31,13 @@ body{
     align-items: center;
 
     border-bottom: 1px solid black ;
-}
-```
-### Nav-items 
-```css
 
+    @media (max-width:430px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* Nav-items */
 .nav-items{
     height: 100%;
     display: flex;
@@ -45,11 +53,8 @@ a{
 a:hover{
     color: white;
 }
-```
-### Hero Section
 
-```css
-
+/*-------------- Hero Section ------------- */
 .hero{
     width: 100%;
     padding-top: 50px;
@@ -65,10 +70,6 @@ a:hover{
     
 }
 
-```
-
-```css
-
 /* Style Text */
 .identity{
     width: 100%;
@@ -80,9 +81,7 @@ a:hover{
 
     border-bottom: 1px solid black ;
 }
-```
-
-```css
+/* name */
 .identity h1 {
     text-align: center;
     font-size: 70px;
@@ -92,10 +91,6 @@ a:hover{
     color: #ff014f;
 }
 
-```
-
-
-```css
 /* text */
 .identity p{
     font-weight: 500;
@@ -105,8 +100,7 @@ a:hover{
     color: #ff014f;
     
 }
-```
-```css
+
 /* Social Media */
 
 .identity .connect{
@@ -117,9 +111,6 @@ a:hover{
     gap: 10px;
 }
 
-```
-
-```css
 /* image */
 .image{
     width: 700px; 
@@ -129,9 +120,7 @@ a:hover{
         width: 100%;
     }
 }
-```
-### About
-```css
+
 /*------------------- About -----------------*/
 .about{
     width: 100%;
@@ -156,9 +145,6 @@ a:hover{
 
 }
 
-```
-
-```css
 /* About-Text Style */
 .about-head{
     color: #ff014f;
@@ -180,12 +166,8 @@ a:hover{
 
 }
 
-```
 
-### Features
-
-```css
-
+/*------------------- Features Section ------------------- */
 
 .features{
     padding-top: 30px;
@@ -210,11 +192,6 @@ a:hover{
 .features-text h1{
     color: white;
 }
-
-```
-
-```css
-
 /* Service */
 .service{
     padding-top: 30px;
@@ -229,9 +206,6 @@ a:hover{
     flex-wrap: wrap;
 }
 
-```
-
-```css
 /* Style Box */
 .box{
 
@@ -262,11 +236,7 @@ a:hover{
 .box svg{
     width: 30px;
 }
-```
 
-### Footer
-
-```css
 
 /* Footer */
 
@@ -277,5 +247,3 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
-```
